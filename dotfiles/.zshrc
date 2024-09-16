@@ -17,6 +17,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias exa="eza"
+alias pn=pnpm
+alias pnx=pnpm exec
 
 export PATH="/home/$USER/.local/bin:$PATH"
 
