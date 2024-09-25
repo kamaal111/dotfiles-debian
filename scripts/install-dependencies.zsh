@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install -y just zsh gpg git vim wget curl
+sudo apt install -y just zsh gpg git vim wget curl dnsmasq dnsutils net-tools
 
 # Install zoxide
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
@@ -31,6 +31,7 @@ else
     sudo apt install -y gh
 fi
 
+# Install Caddy
 if ! command -v caddy &> /dev/null
 then
     sudo apt remove apache2
